@@ -1,0 +1,126 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+
+import image_1_1 from "../assets/1-1.webp";
+import image_1_2 from "../assets/1-2.webp";
+import image_2_1 from "../assets/2-1.jpg";
+import image_2_2 from "../assets/2-2.webp";
+import image_2_3 from "../assets/2-3.webp";
+---
+
+<BaseLayout>
+  <main>
+    <section>
+      <h1>De Selsvigske Krige</h1>
+      <p>
+        De selsvigske krige var to væbnede konflikter i 1800-tallet mellem
+        Danmark og nogen tyske stater om herredømmet over Slesvig og Holsten.
+      </p>
+    </section>
+
+    {/* 1. Slesvigske krig (Trårskrigen) */}
+    <section>
+      <h2>1. Slesvigske krig (Trårskrigen)</h2>
+
+      <div>
+        <p>
+          Treårskrigen brød ud grundet en konflikt omkring hertugdømmerne
+          Slesvig og Holsten. Danmark ville gerne at Slesvig blev en del af
+          Kongeriget Danmark, og at Holsten skulle løsrives fra Slesvig. Derimod
+          ville de tysksindede slesvig-holstenere gerne løsrives fra Helstaten.
+        </p>
+        <Image src={image_1_1} alt="image_1_1" width="700" />
+      </div>
+
+      <div>
+        <Image src={image_1_2} alt="image_1_2" width="700" />
+        <p>
+          Krigen var dels en borgerkrig, og dels en konflikt mellem Danmark og
+          de tyske stater som støttede oprørerne. Dog i 1852 sluttede
+          fredsforhandlingerne der foregik i London. Danmark forblev en helstat,
+          men stadig med store modsætninger i Slesvig.
+        </p>
+      </div>
+    </section>
+
+    {/* 2. Slesvigske krig */}
+    <section>
+      <h2>2. Slesvigske krig</h2>
+
+      <div>
+        <p>
+          I 1863 blev Novemberforfatningen vedtaget i Danmark og Slesvig. Den
+          skulle gøre Slesvig tættere med Danmark, ved for eksempel at gøre så
+          man skal lære dansk i skolerne. Det var dog imod de fredsafter der
+          blev lavet i Londen. Danmark viste godt at det var et brud på aftalen
+          men håbede at Storbritannien og Frankrig ville hjælpe dem. Preussen og
+          Østrig sagde at de ville erklære krig hvis Danmark ikke trak den
+          tilbage, men det nyttede ikke, og Danmark holdte fast.
+        </p>
+        <Image src={image_2_1} alt="image_2_1" width="400" />
+      </div>
+
+      <div>
+        <Image src={image_2_2} alt="image_2_2" width="600" />
+        <p>
+          Den 23. december rykkede preussiske tropper ind i Holsten, og de
+          danske trak sig tilbage uden at gøre nogen mostand. I januar 1864
+          forlangte Bismarck at at Novemberforfatningen skulle trækkes tilbage
+          inden 48 timer, men det skete ikke, og de preussiske tropper rykkede
+          nærmere.
+        </p>
+      </div>
+
+      <div>
+        <p>
+          I slut januar begyndte krigen. Danmarks hær befandt sig ved
+          Dannevirke, mens den preussiske hær befandt sig ved Ejderen. Om
+          morgnen 31. januar overbrang to preussiske officerer krigserklæringen
+          til general de Meza, som var den øverstbefalende for den danske hær.
+        </p>
+        <Image src={image_2_3} alt="image_2_3" width="700" />
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style lang="scss">
+  main {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      display: flex;
+      justify-content: center;
+    }
+
+    p {
+      display: flex;
+      justify-content: center;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+
+      padding: 0 25em;
+
+      h2 {
+        display: flex;
+        justify-content: center;
+      }
+
+      div {
+        display: flex;
+        flex-direction: row;
+
+        padding: 0.5em 0;
+
+        p {
+          padding: 1em;
+        }
+      }
+    }
+  }
+</style>
